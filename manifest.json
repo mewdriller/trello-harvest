@@ -1,0 +1,24 @@
+{
+    "name": "trello-harvest",
+    "version": "0.1.0",
+    "description": "A Chrome plugin for Trello that makes it easier to track billable time by cards.",
+    "content_scripts": [
+        {
+            "matches": [ "https://trello.com/*" ],
+            "js": [ "jquery-1.8.2.min.js", "trello-harvest.js" ],
+            "css": [ "trello-harvest.css" ]
+        }
+    ],
+    "manifest_version": 2,
+    "icons": { "128": "images/harvest-logo-icon-128px.png" },
+    "permissions": [
+        "clipboardRead",
+        "clipboardWrite"
+    ],
+    "background": {
+        "page": "background.html"
+    },
+    "web_accessible_resources": [
+        "images/harvest-icon-background.png"
+    ]
+}

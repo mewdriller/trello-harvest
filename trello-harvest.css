@@ -1,0 +1,7 @@
+.small-icon.harvest-icon {
+    background-position: 0px 0px;
+}
+
+.button-link:hover .small-icon.harvest-icon {
+    background-position: 0px -18px;
+}
